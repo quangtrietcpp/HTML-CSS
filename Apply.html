@@ -1,37 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Apply a job</title>
-<link rel="stylesheet" type="text/css" href="tryonce.css" /> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply a job</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+     <link rel="stylesheet" type="text/css" href="tryonce.css" />
 </head>
 
 <body>
-<table class="tableform">
-<form name="apply_form" action="apply.html" method="post">
-    <tr>
-        <th><b>Apply</b></th>
+<table class="tableform table table-striped container">
+<form role="form" name="apply_form" action="apply.html" method="post">
+    <tr class="row">
+        <th class="col-md-4"><b>Apply</b></th>
     </tr>
-    <tr>
-        <td>Username</td>
-        <td><input type="text" name="username" size="25" maxlength="25" class="textbox"></td>
+    <tr class="row">
+        <td class="col-md-2 col-md-offset-1">Username</td>
+        <td class="col-md-5">
+        <input type="text" name="username" size="25" maxlength="25" class="textbox" placeholder="Username"></td>
     </tr>
-    <tr>
-        <td>Job</td>
-        <td><input type="text" name="occupation" size="25" maxlength="25" class="textbox"></td>	
+    <tr class="row">
+        <td class="col-md-2 col-md-offset-1">Job</td>
+        <td class="col-md-5">
+        <input type="text" name="occupation" size="25" maxlength="25" class="textbox" placeholder="Occupation"></td>	
     </tr>
-    <tr>
+    <tr class="row">
         <td><br /></td>
     </tr>
-    <tr>
-        <td>Message</td>
+    <tr class="row">
+        <td class="col-md-2 col-md-offset-1">Message</td>
     </tr>
-    <tr>
-        <td><textarea cols="50" rows="5" name="message" wrap="off"> </textarea></td>
+    <tr class="row">
+        <td class="col-md-7 col-md-offset-1">
+        <textarea cols="50" rows="5" name="message" wrap="off" placeholder="Type the message here."> </textarea></td>
     </tr>
-    <tr>
+    <tr class="row">
         <td><br />
-        <input type="submit" value="Save" class="button"></td>
+        <input type="submit" value="Save" class="button btn btn-primary"></td>
     </tr>
 </form>
 </table>
