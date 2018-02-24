@@ -1,67 +1,73 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Find a job</title>
-<link rel="stylesheet" type="text/css" href="tryonce.css" /> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find a job</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+     <link rel="stylesheet" type="text/css" href="tryonce.css" />
 </head>
 
 <body>
-<table class="tableform">
-<form name="find_form" action="find_job.html" method="get">
-    <tr>
-        <th><b>Find a job</b></th>
-    </tr>
-    <tr>
-        <td><input type="text" name="txt" size="25" maxlength="25" class="textbox"></td> 
-    </tr>
-    <tr>
-        <td>
-            <select name="occupation">
-            <option value="default">Selection...</option>
-            <option value="dev">Developer</option>
-            <option value="tst">Tester</option>
-            <option value="mng">Manager</option>
-            </select>
-        </td>
-    </tr>
-    <tr>
-        <td><br>
-        <input type="submit" value="Search" class="button"></td>
-    </tr>
+<div class="container">
+<form class="form-horizontal" role="form" name="find_form" action="find_job.html" method="get">
+<div class="form-group">
+    <div class="row">
+    <div class="col-md-4"><h2><b>Find a job</b></h2></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+    </div><br />
+    <div class="row">
+    <div class="col-md-12">
+    <input type="text" name="username" class="form-control" placeholder="Occupation"></div>
+    </div><br />
+    <div class="row">
+        <select name="occupation">
+        <option value="default">Selection...</option>
+        <option value="dev">Developer</option>
+        <option value="tst">Tester</option>
+        <option value="mng">Manager</option>
+        </select>
+    </div><br />
+    <div class="row">
+    <div class="col-md-2 col-md-offset-2">
+    <input type="submit" value="Search" class="btn btn-primary"></div>
+    </div>
+</div>
 </form>
+<table class="table table-condensed">
+    <tr class="row"> 
+        <th class="col-md-2">Name</th>
+        <th class="col-md-2">Posted</th>
+        <th class="col-md-2">Action</th> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
 </table>
-<table class="tablelist">
-    <tr> 
-        <th>Name</th>
-        <th>Posted</th>
-        <th>Action</th> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-</table>
+</div>
 </body>
 </html>

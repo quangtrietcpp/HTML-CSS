@@ -1,52 +1,68 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Homepage</title>
-<link rel="stylesheet" type="text/css" href="tryonce.css" /> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+     <link rel="stylesheet" type="text/css" href="tryonce.css" />
 </head>
 
 <body>
-<h1> Jobeet </h1>
-<a href="post_job.html">Post a job</a>
-<br />
-<a href="find_job.html">Find a job</a>
-<br />
-<a href="user.html">User</a>
-<br />
-<h3> New jobs </h4>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Jobeet</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="post_job.html">Post a job</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="find_job.html">Find a job</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="user.html">User</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+<h3> New jobs </h3>
+<table class="table table-condensed">
+    <tr class="row"> 
+        <th class="col-md-2">Name</th>
+        <th class="col-md-2">Posted</th>
+        <th class="col-md-2">Action</th> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
+    <tr class="row"> 
+        <td class="col-md-2">IT Job</td>
+        <td class="col-md-2">2016-04-21</td>
+        <td class="col-md-2">Apply</td> 
+    </tr>
 </table>
-<table class="tablelist">
-    <tr> 
-        <th>Name</th>
-        <th>Posted</th>
-        <th>Action</th> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-    <tr> 
-        <td>IT Job</td>
-        <td>2016-04-21</td>
-        <td>Apply</td> 
-    </tr>
-</table>
+</div>
 </body>
 </html>

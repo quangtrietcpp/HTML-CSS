@@ -1,48 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>User</title>
-<link rel="stylesheet" type="text/css" href="tryonce.css" /> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+     <link rel="stylesheet" type="text/css" href="tryonce.css" />
 </head>
 
 <body>
-<table class="tableform">
-<form name="user_form" action="user.html" method="post">
-    <tr>
-        <th><b>User</b></th>
-    </tr>
-    <tr>
-        <td>Username</td>
-    </tr>
-    <tr>
-        <td><input type="text" name="username" size="25" maxlength="25" class="textbox"></td>
-    </tr>
-    <tr>
-        <td>Password</td>
-    </tr>
-    <tr>
-        <td><input type="password" name="password" size="25" maxlength="25" class="textbox"></td>
-    </tr>
-    <tr>
-        <td>Email</td>
-    </tr>
-    <tr>
-        <td><input type="text" name="email" size="25" maxlength="25" class="textbox"></td>
-    </tr>
-    <tr> 
-        <td>Skills</td> 
-    </tr>
-    <tr> 
-        <td><input type="checkbox" name="skill" value="bsn">Business
-        <input type="checkbox" name="skill" value="mth">Math
-        <input type="checkbox" name="skill" value="it" checked="checked">IT</td>
-    </tr> 
-    <tr>
-        <td><br>
-        <input type="submit" value="Save" class="button"></td>
-    </tr>
+<div class="container">
+<form class="form-horizontal" role="form" name="user_form" action="user.html" method="post">
+<div class="form-group">
+    <div class="row">
+    <div class="col-md-4"><h2><b>User</b></h2></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+    </div><br />
+    <div class="row">
+    <div class="col-md-2">Username</div>
+    <div class="col-md-10">
+    <input type="text" name="username" class="form-control" placeholder="Username"></div>
+    </div><br />
+    <div class="row">
+    <div class="col-md-2">Password</div>
+    <div class="col-md-10">
+    <input type="password" name="username" class="form-control" placeholder="Password"></div>
+    </div><br />
+    <div class="row">
+    <div class="col-md-2">Email</div>
+    <div class="col-md-10">
+    <input type="email" name="username" class="form-control" placeholder="Email"></div>
+    </div><br />
+    <div class="row">
+    <div class="col-md-2">Skills</div>
+    <div class="col-md-10"></div>
+    </div><br />
+    <div class="form-check form-check-inline"> 
+        <input type="checkbox" class="form-check-input" name="skill" value="bsn">Business
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="checkbox-inline" name="skill" value="mth">Math
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="checkbox-inline" name="skill" value="it" checked="checked">IT
+    </div><br /><br />
+    <div class="row">
+    <div class="col-md-2 col-md-offset-2">
+    <input type="submit" value="Save" class="btn btn-primary"></div>
+    </div></div>
 </form>
-</table>
+</div>
 </body>
 </html>
