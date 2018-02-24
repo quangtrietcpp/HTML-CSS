@@ -10,19 +10,28 @@
 </head>
 
 <body>
-<div class="container-fruid">
-<div class="row">
-    <div class="col-md-6"><h1>Jobeet</h1></div>
-</div><br />
-<a href="post_job.html">Post a job</a>
-<br />
-<a href="find_job.html">Find a job</a>
-<br />
-<a href="user.html">User</a>
-<br />
-<br />
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Jobeet</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="post_job.html">Post a job</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="find_job.html">Find a job</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="user.html">User</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
 <h3> New jobs </h3>
-<table class="table table-striped table-bordered table-condensed tablelist">
+<table class="table table-condensed">
     <tr class="row"> 
         <th class="col-md-2">Name</th>
         <th class="col-md-2">Posted</th>
