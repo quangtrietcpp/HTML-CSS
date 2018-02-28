@@ -1,51 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Post new job</title>
-<link rel="stylesheet" type="text/css" href="tryonce.css" /> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post a new job</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+     <link rel="stylesheet" type="text/css" href="tryonce.css" />
 </head>
 
 <body>
-<table class="tableform">
-<form name="post_form" action="post_job.html" method="get">
-    <tr>
-        <th><b>Post a job</b></th>
-    </tr>
-    <tr>
-        <td>Category...</td> 
-    </tr>
-    <tr>
-        <td>
-            <select name="occupation">
-		    <option value="default">Selection...</option>
-		    <option value="dev">Developer</option>
-		    <option value="tst">Tester</option>
-		    <option value="mng">Manager</option>
-		    </select>
-        </td>
-    </tr>
-    <tr> 
-        <td>Title</td> 
-    </tr>
-    <tr>
-	    <td><input type="text" name="title" size="25" maxlength="25" class="textbox"></td>
-    </tr>
-    <tr> 
-        <td>Description </td> 
-    </tr>
-    <tr> 
-        <td><textarea cols="50" rows="5" name="message" wrap="off"></textarea></td>
-    </tr>
-    <tr> 
-        <td><input type="radio" name="pop" value="pub">public
-        <input type="radio" name="pop" value="pri" checked="checked">private</td>
-    </tr> 
-    <tr>
-	    <td> <br>
-        <input type="submit" value="Post" class="button"></td>
-    </tr>
-</form>
-</table>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Jobeet</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="post_job.html">Post a job</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="find_job.html">Find a job</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user.html">User</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Apply.html">Apply</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h2>Post a job</h2>
+  <div class="container">
+  <form class="form-horizontal" role="form" name="post_form" action="post_job.html" method="get">
+  <div class="form-group">
+    <div class="row">
+    <div class="col-md-2">Category...</div>
+    <div class="col-md-10"></div>
+    </div><br />
+    <div class="row">
+        <select name="occupation">
+        <option value="default">Selection...</option>
+        <option value="dev">Developer</option>
+        <option value="tst">Tester</option>
+        <option value="mng">Manager</option>
+        </select>
+    </div><br />
+    <div class="row">
+    <div class="col-md-2">Title</div>
+    <div class="col-md-10">
+    <input type="text" name="username" class="form-control" placeholder="Title"></div>
+    </div><br />
+    <div class="row">
+    <div class="col-md-2">Description</div>
+    <div class="col-md-10">
+    <textarea cols="100" rows="5" class="form-control" name="message" wrap="off"> </textarea></div>
+    </div><br />
+    <div class="form-check form-check-inline"> 
+        <input type="radio" name="pop" class="form-check-input" value="pub">public
+    </div>
+    <div class="form-check form-check-inline"> 
+        <input type="radio" class="form-check-input" name="pop" value="pri" checked="checked">private
+    </div><br /><br />
+    <div class="row">
+    <div class="col-md-2 col-md-offset-2">
+    <input type="submit" value="Post" class="btn btn-primary"></div>
+    </div>
+  </div>
+  </form>
+</div>
 </body>
 </html>
